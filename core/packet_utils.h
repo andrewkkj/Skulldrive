@@ -23,7 +23,7 @@ unsigned short calculate_icmp_checksum(struct icmphdr *icmp_hdr, int len);
 
 // Funções de manipulação de pacotes
 int create_syn_packet(char *packet, const char *src_ip, const char *dst_ip, 
-                     int src_port, int dst_port);
+                    int src_port, int dst_port);
 int create_udp_packet(char *packet, const char *src_ip, const char *dst_ip,
                      int src_port, int dst_port, const char *payload, int payload_len);
 int create_icmp_packet(char *packet, const char *src_ip, const char *dst_ip,
