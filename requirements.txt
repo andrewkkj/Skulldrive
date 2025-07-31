@@ -1,0 +1,12 @@
+# requirements.txt
+
+colorama>=0.4.6         # Cores no terminal
+cryptography>=41.0.3    # Criptografia (remova se não usar)
+dnspython>=2.4.2        # Manipulação de DNS (remova se não usar)
+matplotlib>=3.7.1       # Gráficos e visualização (remova se não usar)
+numpy>=1.24.3           # Operações matemáticas (remova se não usar)
+psutil>=5.9.5           # Informações do sistema (remova se não usar)
+pyyaml>=6.0             # Leitura de arquivos YAML de configuração
+python-nmap>=0.7.1      # Wrapper para Nmap
+requests>=2.31.0        # Requisições HTTP (remova se não usar)
+scapy>=2.4.5            # Manipulação de pacotes de rede

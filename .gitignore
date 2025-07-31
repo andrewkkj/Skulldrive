@@ -1,0 +1,102 @@
+# Arquivos de compilação
+*.o
+*.so
+*.dylib
+*.dll
+*.exe
+core/engine_core
+
+# Arquivos Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Ambientes virtuais
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Relatórios e IoC
+reports/
+ioc/exports/
+*.json
+*.xml
+*.csv
+*.yar
+*.yml
+
+# Arquivos temporários
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração sensíveis
+config/local.yaml
+config/secrets.yaml
+
+# Arquivos de teste
+test_*
+*_test.py
+
+# Arquivos de backup
+*.bak
+*.backup
+
+# Arquivos de dados
+*.pcap
+*.pcapng
+*.cap
+
+# Arquivos de mutação
+payloads/mutations/
+
+# Arquivos de stealth
+stealth_*
+stealth.log
+
+# Arquivos de campanha
+campaign_*
+ENGINE_*
+
+# Arquivos de estatísticas
+stats_*
+statistics_*
+
+# Arquivos de debug
+debug_*
+*.debug 

