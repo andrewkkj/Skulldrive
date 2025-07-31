@@ -8,7 +8,7 @@ import socket
 import time
 import threading
 import nmap
-from scapy.all import *
+from scapy.all import IP, ICMP, sr1
 from colorama import Fore, Style
 
 class TargetAnalyzer:
