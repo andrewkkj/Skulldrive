@@ -2,7 +2,7 @@
   <img src="./assets/logo.png" alt="Logo do Projeto" width="200"/>
 </p>
 
-# Engine de Ataque de Baixo e Alto Volume
+# Skulldrive
 
 > **ATENÇÃO:** Este projeto está em desenvolvimento inicial. Não utilize em ambientes de produção. Algumas funcionalidades podem não estar funcionando corretamente. Funcionalidades, interfaces e resultados podem mudar a qualquer momento.
 
@@ -10,7 +10,7 @@
 
 ## Visão Geral
 
-A **Engine de Ataque de Baixo e Alto Volume** é uma plataforma modular para pesquisa e simulação de ataques de rede, voltada para profissionais de segurança, pesquisadores e estudantes. O objetivo é fornecer uma base robusta para testes de penetração controlados, análise de defesa e geração de artefatos para ambientes de laboratório.
+O **Skulldrive** é uma plataforma modular para pesquisa e simulação de ataques de rede, voltada para profissionais de segurança, pesquisadores e estudantes. O objetivo é fornecer uma base robusta para testes de penetração controlados, análise de defesa e geração de artefatos para ambientes de laboratório.
 
 ---
 
@@ -37,7 +37,7 @@ A **Engine de Ataque de Baixo e Alto Volume** é uma plataforma modular para pes
 ## Estrutura do Projeto
 
 ```
-engine/
+Skulldrive/
 ├── core/           # Núcleo de performance em C
 ├── python/         # Interface CLI, análise e automação
 ├── payloads/       # Payloads, padrões e mutações
