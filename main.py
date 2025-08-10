@@ -33,9 +33,9 @@ def parse_arguments():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Exemplos:
-  python3 main.py --mode slow --target example.com --port 80
-  python3 main.py --mode saturation --target example.com --duration 60
-  python3 main.py --mode exploit --target example.com --vulnerability tcp_reuse
+    python3 main.py --mode slow --target example.com --port 80
+    python3 main.py --mode saturation --target example.com --duration 60
+    python3 main.py --mode exploit --target example.com --vulnerability tcp_reuse
         """
     )
     
